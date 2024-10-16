@@ -214,7 +214,7 @@ $border-color: #ccc;
       border-radius: 8px;
       padding: 15px;
       margin: 10px 0;
-      width: 100%;
+      width: 85%;
       max-width: 400px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
       transition: transform 0.2s;

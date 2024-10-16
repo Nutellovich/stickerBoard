@@ -101,6 +101,7 @@ $delete-button-hover-bg: #ff1a1a;
   justify-content: center;
   align-items: center;
   width: 100%;
+  padding: 0 10px;
 }
 
 .empty-message {
