@@ -6,6 +6,11 @@
       <button type="submit" class="add-button">Добавить карточку</button>
     </form>
     <div class="card-container" :style="{ height: containerHeight }">
+      <div v-if="cards.length === 0" class="empty-message">
+        <span>Заполняй поле выше и жми "Добавить карточку"</span>
+        <span class="small-text">*активно ждёт*</span>
+        <img src="/img/wow.webp" alt="Sticker" class="sticker-image" />
+      </div>
       <div v-for="card in [...cards].reverse()" :key="card.id" class="card">
         <div v-if="editingCardId === card.id" class="edit-container">
           <textarea v-model="editText" placeholder="Введите новый текст" />
@@ -105,6 +110,27 @@ $border-color: #ccc;
   padding: 8px 12px;
   cursor: pointer;
   transition: background-color 0.3s, opacity 0.3s;
+}
+
+.small-text {
+  font-size: 14px;
+}
+
+.empty-message {
+  color: #666;
+  font-size: 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 14px;
+  align-items: center;
+  height: 100%;
+}
+
+.sticker-image {
+  width: 100px;
+  height: auto;
 }
 
 .ear {

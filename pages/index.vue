@@ -2,7 +2,7 @@
   <div class="container" :class="{ empty: cards.length === 0 }">
     <div class="card-container" :style="{ height: containerHeight }">
       <div v-if="cards.length === 0" class="empty-message">
-        <p>Вы пока не добавили ни одного стикера. Добавьте его!</p>
+        <p>Вы пока не добавили ни одного стикера. Добавьте его в настройках!</p>
         <img src="/img/go.webp" alt="Sticker" class="sticker-image" />
       </div>
       <div
