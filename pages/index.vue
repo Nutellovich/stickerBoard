@@ -1,10 +1,6 @@
 <template>
-  <div
-    class="container"
-    :class="{ empty: cards.length === 0 }"
-    :style="{ height: containerHeight }"
-  >
-    <div class="card-container">
+  <div class="container" :class="{ empty: cards.length === 0 }">
+    <div class="card-container" :style="{ height: containerHeight }">
       <div v-if="cards.length === 0" class="empty-message">
         <p>Вы пока не добавили ни одного стикера. Добавьте его!</p>
         <img src="/img/go.webp" alt="Sticker" class="sticker-image" />
@@ -119,7 +115,6 @@ $delete-button-hover-bg: #ff1a1a;
   border: 1px solid $card-border-color;
   border-radius: 8px;
   padding: 15px;
-  margin: 10px 0;
   width: 200px;
   height: 200px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);

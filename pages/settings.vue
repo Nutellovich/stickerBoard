@@ -30,6 +30,7 @@
         </div>
       </div>
     </div>
+    <div class="ear">2024 г. | @nutellovich</div>
   </div>
 </template>
 
@@ -60,7 +61,7 @@ const saveCard = (id) => {
 };
 
 const updateContainerHeight = () => {
-  containerHeight.value = `${window.innerHeight - 270}px`;
+  containerHeight.value = `${window.innerHeight - 330}px`;
 };
 
 // Функция для отмены редактирования
@@ -106,6 +107,11 @@ $border-color: #ccc;
   transition: background-color 0.3s, opacity 0.3s;
 }
 
+.ear {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
 .add-card-container {
   margin: 20px;
   text-align: center;
@@ -114,7 +120,7 @@ $border-color: #ccc;
   .add-card-form {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 
     input {
       padding: 10px;
@@ -201,12 +207,19 @@ $border-color: #ccc;
     color: #8aa6a5;
   }
 
+  .end {
+    margin-top: 15px;
+  }
+
   .card-container {
     display: flex;
     flex-direction: column;
     overflow-y: auto;
     align-items: center;
     position: relative;
+    margin: 0 10px;
+    border: 2px solid rgb(0, 123, 255);
+    border-radius: 14px;
 
     .card {
       background-color: $card-background;
@@ -234,7 +247,7 @@ $border-color: #ccc;
   }
 }
 
-@media (max-width: 629px) {
+@media (max-width: 640px) {
   .add-card-container {
     padding: 0;
     margin: 0;
