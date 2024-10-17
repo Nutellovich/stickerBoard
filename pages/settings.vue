@@ -7,7 +7,7 @@
     </form>
     <div class="card-container" :style="{ height: containerHeight }">
       <div v-if="cards.length === 0" class="empty-message">
-        <span>Заполняй поле выше и жми "Добавить карточку"</span>
+        <span>Заполняйте поле выше и нажимайте "Добавить карточку"</span>
         <span class="small-text">*активно ждёт*</span>
         <img src="/img/wow.webp" alt="Sticker" class="sticker-image" />
       </div>
